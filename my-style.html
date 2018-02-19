@@ -1,36 +1,10 @@
 <link rel="import" href="../polymer/polymer-element.html">
-
+<link rel="import" href="./my-color.html">
+<link rel="import" href="./flexbox-grid.html">
 <dom-module id="my-style">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
+    <style include="my-color flexbox-grid">
+     
     </style>
-    <h2>Hello [[prop1]]!</h2>
   </template>
-
-  <script>
-    /**
-     * `my-style`
-     * 
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class MyStyle extends Polymer.Element {
-      static get is() { return 'my-style'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'my-style'
-          }
-        };
-      }
-    }
-
-    window.customElements.define(MyStyle.is, MyStyle);
-  </script>
 </dom-module>

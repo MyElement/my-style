@@ -1,0 +1,79 @@
+<link rel="import" href="../../polymer/polymer-element.html">
+<link rel="import" href="./my-style.html">
+<dom-module id="demo-app">
+    <template>
+        <style include="my-style">
+            .color-primary {
+                background-color: var(--bg-color-primary);
+            }
+            .color-secondary {
+                background-color: var(--bg-color-secondary);
+            }
+            .color-success {
+                background-color: var(--bg-color-success);
+            }
+            .color-danger {
+                background-color: var(--bg-color-danger);
+            }
+            .color-warning {
+                background-color: var(--bg-color-warning);
+            }
+            .color-info {
+                background-color: var(--bg-color-info);
+            }
+            .color-light {
+                background-color: var(--bg-color-light);
+            }
+            .color-dark {
+                background-color: var(--bg-color-dark);
+            }
+            .color-white {
+                background-color: var(--bg-color-white);
+            }
+            .box {
+                width: 80px;
+                height: 80px;
+            }
+        </style>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-primary"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-secondary"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-success"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-danger"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-warning"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-info"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-light"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-dark"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="box color-white"></div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        class DemoApp extends Polymer.Element {
+
+            static get is() {
+                return 'demo-app';
+            }
+        }
+
+        window.customElements.define(DemoApp.is, DemoApp);
+    </script>
+</dom-module>
